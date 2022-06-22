@@ -1,0 +1,144 @@
+.relative
+{
+    position: relative !important;
+}
+.absolute
+{
+    position: absolute !important;
+}
+
+.block
+{
+    display: block !important;
+}
+
+.small
+{
+    font-size: smaller !important;
+}
+
+.nowrap
+{
+    white-space: nowrap !important;
+}
+
+.justify
+{
+    text-align: justify !important;
+}
+
+.no-select
+{
+    user-select: none !important;
+}
+
+.u
+{
+    text-decoration: underline !important;
+}
+
+.b
+{
+    font-weight: bold !important;
+}
+
+.pointer
+{
+    cursor: pointer !important;
+}
+
+.uppercase
+{
+    text-transform: uppercase !important;
+}
+
+.flex
+{
+    display: flex !important;
+
+    & > *:not(:last-child)
+    {
+        margin-right: 20px;
+    }
+}
+
+.grow
+{
+    flex-grow: 1 !important;
+}
+
+
+// Boxes
+
+.box:not(:last-child)
+{
+    margin-bottom: 20px;
+}
+
+.box-small:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+.box-tiny:not(:last-child)
+{
+    margin-bottom: 5px;
+}
+
+.box2x:not(:last-child)
+{
+    margin-bottom: 40px;
+}
+
+.box-tiny
+{
+    .box((@gap / 4));
+}
+
+
+// Breakpoints
+
+.hide-xs
+{
+    display: none !important;
+}
+.show-xs
+{
+    display: block !important;
+}
+
+@media (min-width: 48em)
+{
+    .hide-sm
+    {
+        display: none !important;
+    }
+    .show-sm
+    {
+        display: block !important;
+    }
+}
+
+@media (min-width: 64em)
+{
+    .hide-md
+    {
+        display: none !important;
+    }
+    .show-md
+    {
+        display: block !important;
+    }
+}
+
+@media (min-width: 75em)
+{
+    .hide-lg
+    {
+        display: none !important;
+    }
+    .show-lg
+    {
+        display: block !important;
+    }
+}
