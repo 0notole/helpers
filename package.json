@@ -1,6 +1,6 @@
 {
   "name": "helpers.less",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Essential CSS helpers",
   "main": "index.js",
   "scripts": {
