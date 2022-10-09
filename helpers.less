@@ -131,7 +131,14 @@
 }
 .show-xs
 {
-    display: block !important;
+    &.flex
+    {
+        display: flex !important;
+    }
+    &:not(.flex)
+    {
+        display: block !important;
+    }
 }
 
 @media (min-width: 48em)
@@ -142,7 +149,14 @@
     }
     .show-sm
     {
-        display: block !important;
+        &.flex
+        {
+            display: flex !important;
+        }
+        &:not(.flex)
+        {
+            display: block !important;
+        }
     }
 }
 
@@ -154,7 +168,14 @@
     }
     .show-md
     {
-        display: block !important;
+        &.flex
+        {
+            display: flex !important;
+        }
+        &:not(.flex)
+        {
+            display: block !important;
+        }
     }
 }
 
@@ -166,6 +187,13 @@
     }
     .show-lg
     {
-        display: block !important;
+        &.flex
+        {
+            display: flex !important;
+        }
+        &:not(.flex)
+        {
+            display: block !important;
+        }
     }
 }
