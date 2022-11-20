@@ -126,7 +126,8 @@
 // Breakpoints
 
 .hide-xs.flex,
-.hide-xs:not(.flex)
+.hide-xs:not(.flex),
+.hide-xs:not(.inline-block)
 {
     display: none !important;
 }
@@ -136,7 +137,12 @@
     {
         display: flex !important;
     }
-    &:not(.flex)
+    &.inline-block
+    {
+        display: inline-block !important;
+    }
+    &:not(.flex),
+    &:not(.inline-block)
     {
         display: block !important;
     }
@@ -155,7 +161,12 @@
         {
             display: flex !important;
         }
-        &:not(.flex)
+        &.inline-block
+        {
+            display: inline-block !important;
+        }
+        &:not(.flex),
+        &:not(.inline-block)
         {
             display: block !important;
         }
@@ -175,7 +186,12 @@
         {
             display: flex !important;
         }
-        &:not(.flex)
+        &.inline-block
+        {
+            display: inline-block !important;
+        }
+        &:not(.flex),
+        &:not(.inline-block)
         {
             display: block !important;
         }
@@ -195,7 +211,12 @@
         {
             display: flex !important;
         }
-        &:not(.flex)
+        &.inline-block
+        {
+            display: inline-block !important;
+        }
+        &:not(.flex),
+        &:not(.inline-block)
         {
             display: block !important;
         }
